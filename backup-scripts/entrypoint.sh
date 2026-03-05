@@ -1,4 +1,3 @@
-cat > backup-scripts/entrypoint.sh << 'EOF'
 #!/bin/bash
 
 echo "=== Настройка контейнера backuper ==="
@@ -45,6 +44,3 @@ crond
 # Бесконечное ожидание, чтобы контейнер не завершился
 echo "Контейнер готов. Ожидание команд..."
 tail -f /dev/null
-EOF
-
-chmod +x backup-scripts/entrypoint.sh

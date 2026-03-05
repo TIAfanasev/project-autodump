@@ -70,7 +70,7 @@ services:
       MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD}
       MINIO_BUCKET: ${MINIO_BUCKET}
 
-   backuper:
+  backuper:
     build: ./backup-scripts
     container_name: backup-backuper
     restart: unless-stopped

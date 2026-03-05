@@ -82,7 +82,7 @@ fi
 
 # Запуск контейнеров
 echo "Запуск контейнеров..."
-docker-compose up -d --build
+docker compose up -d --build
 
 # Ожидание готовности
 echo "Ожидание готовности сервисов..."
